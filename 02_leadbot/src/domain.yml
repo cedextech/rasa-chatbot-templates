@@ -1,0 +1,148 @@
+intents:
+- greet
+- accept
+- reject
+- begin_lead
+
+slots:
+  requirement:
+    type: unfeaturized
+    auto_fill: false
+  mockup:
+    type: unfeaturized
+    auto_fill: false
+  url:
+    type: unfeaturized
+    auto_fill: false
+  timeline:
+    type: unfeaturized
+    auto_fill: false
+  budget:
+    type: unfeaturized
+    auto_fill: false
+  name:
+    type: unfeaturized
+    auto_fill: false
+  email:
+    type: unfeaturized
+    auto_fill: false
+  phone:
+    type: unfeaturized
+    auto_fill: false
+
+actions:
+- utter_greet
+- utter_menu
+- utter_urlAvailable
+- utter_lead_q1
+- utter_lead_q2
+- utter_lead_q3
+- utter_lead_q4
+- utter_lead_q5
+
+forms:
+- lead_form_p1
+- lead_form_p2
+- lead_form_p3
+
+templates:
+  utter_greet:
+  - text: "Hi! I am John from Cedex Technologies LLP. We provide high quality and cost-effective Web, Mobile, Chatbot and Voicebot solutions."
+  
+  utter_menu:
+  - text: "What are you looking for today?"
+    buttons:
+    - title: "Web Application Development"
+      payload: "/begin_lead"
+    - title: "Mobile App Development"
+      payload: "/begin_lead"
+    - title: "Chatbot Development"
+      payload: "/begin_lead"
+    - title: "Frontend Development"
+      payload: "/begin_lead"
+    - title: "Progessive Web App Development"
+      payload: "/begin_lead"
+    - title: "AI & Machine Learning"
+      payload: "/begin_lead"
+
+  utter_lead_q1:
+  - text: "Great. We have developed more than 100+ web applications till date!"
+
+  utter_ask_requirement:
+  - text: "Can you share some brief description of your requirements?"
+
+  utter_ask_mockup:
+  - text: "Alright! \n\nDo you have any of the following ready?"
+    buttons:
+    - title: "Wireframes"
+      payload: "Wireframes"
+    - title: "Designs"
+      payload: "Designs"
+    - title: "RFP or any Document"
+      payload: "RFP or any Document"
+    - title: "None"
+      payload: "None"
+
+  utter_urlAvailable:
+  - text: "Is there any URL that you would like to share for our reference?"
+    buttons:
+    - title: "Yes"
+      payload: "yes"
+    - title: "No"
+      payload: "no"
+
+  utter_ask_url:
+  - text: "Could you please share the URL with us?"
+
+  utter_ask_timeline:
+  - text: "When do you plan to enter development with this project?"
+    buttons:
+    - title: "Immediately"
+      payload: "Immediately"
+    - title: "within a month"
+      payload: "within a month"
+    - title: "within the next 3 months"
+      payload: "within the next 3 months"
+    - title: "after 3 months"
+      payload: "after 3 months"
+
+  utter_ask_budget:
+  - text: "Great!\n\nWhat is your earmarked budget for this project?"
+    buttons:
+    - title: "Below $5000"
+      payload: "Below $5000"
+    - title: "$5000 - $15000"
+      payload: "$5000 - $15000"
+    - title: "$15000 - $25000"
+      payload: "$15000 - $25000"
+    - title: "$25000 and above"
+      payload: "$25000 and above"
+
+  utter_ask_name:
+  - text: "Great. May I know your name please?"
+
+  utter_ask_email:
+  - text: "Can you please share your email ID? Trust us, we will never spam!"
+
+  utter_ask_phone:
+  - text: "Can I have your phone number"
+
+  utter_lead_q2:
+  - text: "Thanks for answering all our questions and being this patient. We appreciate it!"
+
+  utter_lead_q3:
+  - text: "Here is your data: \n
+             - requirement: {requirement}\n
+             - mockup: {mockup}\n
+             - url: {url}\n
+             - timeline: {timeline}\n
+             - budget: {budget}\n
+             - name: {name}\n
+             - email: {email}\n
+             - phone: {phone}"
+
+  utter_lead_q4:
+  - text: "I will have our Business Experts get in touch with you soon, to make your project a reality!"
+
+  utter_lead_q5:
+  - text: "In the meanwhile for anything, you can contact us at sales@cedextech.com or +91 888 999 9999"
