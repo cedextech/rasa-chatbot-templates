@@ -1,6 +1,6 @@
 # Rasa Chatbot Templates
 
-This repository contains a collection of boilerplate templates for different chatbot usecases on RASA platform. You can browse and download the templates from [BotArtisanz](http://botartisanz.com/) or here and start customizing the chatbot capabilities for your usecases.
+This repository contains a collection of boilerplate templates for different chatbot usecases on RASA platform.
 
 ### How to use it?
 Here are the simple steps that you can follow to use a template:
