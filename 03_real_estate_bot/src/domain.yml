@@ -1,0 +1,142 @@
+--- 
+actions: 
+  - utter_greet
+  - utter_goodbye
+forms: 
+  - buy_form
+  - sell_form
+intents: 
+  - greet
+  - goodbye
+  - buy_a_home
+  - sell_your_home
+slots: 
+  address: 
+    auto_fill: false
+    type: unfeaturized
+  bathrooms: 
+    auto_fill: false
+    type: unfeaturized
+  bedrooms: 
+    auto_fill: false
+    type: unfeaturized
+  city: 
+    auto_fill: false
+    type: unfeaturized
+  cost: 
+    auto_fill: false
+    type: unfeaturized
+  country: 
+    auto_fill: false
+    type: unfeaturized
+  email: 
+    auto_fill: false
+    type: unfeaturized
+  months: 
+    auto_fill: false
+    type: unfeaturized
+  phone_number: 
+    auto_fill: false
+    type: unfeaturized
+  property_type: 
+    auto_fill: false
+    type: unfeaturized
+  time_to_sell: 
+    auto_fill: false
+    type: unfeaturized
+  zipcode: 
+    auto_fill: false
+    type: unfeaturized
+templates: 
+  utter_ask_address: 
+    - 
+      text: "Thanks for letting me know. Can I get the address for the property? For example 123 Main street."
+  utter_ask_bathrooms: 
+    - 
+      text: "Cool. How many bathrooms are you looking for?"
+  utter_ask_bedrooms: 
+    - 
+      text: "Ok. How many bedrooms are you looking for?"
+  utter_ask_city: 
+    - 
+      text: "Ok. What city that in?"
+  utter_ask_cost: 
+    - 
+      buttons: 
+        - 
+          payload: 10K
+          title: 10K
+        - 
+          payload: 20K
+          title: 20K
+        - 
+          payload: 30K
+          title: 30K
+      text: "Great! How much are you comfortable spending on your new home?"
+  utter_ask_country: 
+    - 
+      text: "Oh Great! Which part of the country are you looking for?"
+  utter_ask_email: 
+    - 
+      text: "What email address can we use to contact you back?"
+  utter_ask_months: 
+    - 
+      buttons: 
+        - 
+          payload: "In 0 to 3 Months"
+          title: "In 0 to 3 Months"
+        - 
+          payload: "In 3 to 6 Months"
+          title: "In 3 to 6 Months"
+        - 
+          payload: "In 6 to 9 Months"
+          title: "In 6 to 9 Mpnths"
+      text: "When are you looking to buy?"
+  utter_ask_phone_number: 
+    - 
+      text: "Please provide your best contact number, so one of our experts can contact you."
+  utter_ask_property_type: 
+    - 
+      buttons: 
+        - 
+          payload: Condos
+          title: Condos
+        - 
+          payload: Attached
+          title: Attached
+        - 
+          payload: Dettached
+          title: Dettached
+      text: "What property type are you interested in?"
+  utter_ask_time_to_sell: 
+    - 
+      buttons: 
+        - 
+          payload: ASAP
+          title: ASAP
+        - 
+          payload: "3-6 Months"
+          title: "3-6 Months"
+        - 
+          payload: "6+ Months"
+          title: "6+ Months"
+      text: "In order to provide you with valuation can you please let me know when you looking to sell your home?"
+  utter_ask_zipcode: 
+    - 
+      text: "Almost finished! What is the zip code for the property?"
+  utter_greet: 
+    - 
+      buttons: 
+        - 
+          payload: /buy_a_home
+          title: "Buy A Home"
+        - 
+          payload: /sell_your_home
+          title: "Sell Your Home"
+      text: |-
+          Hello,
+          Greetings ! Thanks for launching the Real-Estate Bot. How can I help you today?
+  
+  utter_submit_buy: 
+    - 
+      text: "Good. One of our agents will be in touch with you shortly."
