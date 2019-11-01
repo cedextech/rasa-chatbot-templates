@@ -1,0 +1,91 @@
+intents:
+  - greet
+  - long_feedback
+  - short_feedback
+
+slots:
+  rating:
+    type: unfeaturized
+    auto_fill: false
+  rating_quick:
+    type: unfeaturized
+    auto_fill: false
+  influence:
+    type: unfeaturized
+    auto_fill: false
+  support_feedback:
+    type: unfeaturized
+    auto_fill: false
+
+actions:
+- utter_greet
+- utter_menu
+- utter_thanks
+- utter_sorry
+- utter_awesome
+- utter_influence_done
+- utter_pre_finish
+- utter_finish
+
+forms:
+- form_get_rating
+- form_get_rating_quick
+- form_get_influence
+- form_get_support_feedback
+
+templates:
+  utter_greet:
+  - text: "Hi, my name is feedby. I’m here to collect feedback on your latest experience with our service."
+  utter_menu:
+  - text: "Would like to spend a moment with me?"
+    buttons:
+    - title: "okay"
+      payload: "/long_feedback"
+    - title: "not now"
+      payload: "/short_feedback"
+  utter_ask_rating:
+  - text: "How was your experience with us?"
+    buttons:
+    - title: "1️⃣"
+      payload: "1"
+    - title: "2️⃣"
+      payload: "2"
+    - title: "3️⃣"
+      payload: "3"
+    - title: "4️⃣"
+      payload: "4"
+    - title: "5️⃣"
+      payload: "5"
+    - title: "👏👏👏😍"
+      payload: "6"
+  utter_thanks:
+  - text: "Thanks"
+  utter_sorry:
+  - text: "Sorry to hear this"
+  utter_awesome:
+  - text: "Awesome!"
+  utter_ask_influence:
+  - text: "Sorry to hear this. \n\nCan you help me understand what influenced your rating?"
+  utter_influence_done:
+  - text: "Thanks for bringing this issue to our attention."
+  utter_ask_support_feedback:
+  - text: "Do you have any other feedback to share about our 24/7 support desk?"
+  utter_ask_rating_quick:
+  - text: "I understand. Can we do this real quick? Just choose the rating you would like to give, and we say goodbye."
+    buttons:
+    - title: "1️⃣"
+      payload: "1"
+    - title: "2️⃣"
+      payload: "2"
+    - title: "3️⃣"
+      payload: "3"
+    - title: "4️⃣"
+      payload: "4"
+    - title: "5️⃣"
+      payload: "5"
+    - title: "👏👏👏😍"
+      payload: "6"
+  utter_pre_finish:
+  - text: "Thank you for your time with us."
+  utter_finish:
+  - text: "I’m sharing the information on your behalf with our team. Have a nice day!"
