@@ -259,8 +259,7 @@ class SpeakerConfrence(Action):
   """name of the custom action"""
   return "action_speaker_confrence_details"
 
- def run(self,dispatcher,tracker,domain):
-  print('HAI>>>>>>>>>>>>')	
+ def run(self,dispatcher,tracker,domain):	
   gt = {
             "attachment": {
                 "type": "template",
@@ -441,8 +440,7 @@ class SpeakerConfrenceMore(Action):
   """name of the custom action"""
   return "action_speaker_confrence_more_details"
 
- def run(self,dispatcher,tracker,domain):
-  print('HAI>>>>>>>>>>>>')  
+ def run(self,dispatcher,tracker,domain): 
   gt = {
             "attachment": {
                 "type": "template",
@@ -575,8 +573,7 @@ class SessionConfrenceDetails(Action):
   """name of the custom action"""
   return "action_session_confrence_details"
 
- def run(self,dispatcher,tracker,domain):
-  print('helloooooooooooooooooooooooo')  
+ def run(self,dispatcher,tracker,domain):  
   gt = {
             "attachment": {
                 "type": "template",
@@ -686,8 +683,7 @@ class SessiontwoSpeakerConfrence(Action):
   """name of the custom action"""
   return "action_session_two_speaker_confrence_details"
 
- def run(self,dispatcher,tracker,domain):
-  print('HAI>>>>>>>>>>>>')  
+ def run(self,dispatcher,tracker,domain):  
   gt = {
             "attachment": {
                 "type": "template",
@@ -745,8 +741,7 @@ class SessionMoreConfrenceDetails(Action):
   """name of the custom action"""
   return "action_session_more_confrence_details"
 
- def run(self,dispatcher,tracker,domain):
-  print('helloooooooooooooooooooooooo')  
+ def run(self,dispatcher,tracker,domain): 
   gt = {
             "attachment": {
                 "type": "template",
