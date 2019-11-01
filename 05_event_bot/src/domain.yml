@@ -1,0 +1,64 @@
+--- 
+actions: 
+  - utter_greet
+  - utter_welcome_message
+  - action_venu_confrence_details
+  - action_batman_rooom_details
+  - utter_subscribe_message
+  - action_superman_rooom_details
+  - action_hero_rooom_details
+  - action_speaker_confrence_details
+  - action_speakerone_details
+  - action_speakertwo_details
+  - action_speaker_confrence_more_details
+  - action_speaker_rosestone_details
+  - action_speaker_freya_details
+  - action_session_confrence_details
+  - action_session_speaker_confrence_details
+  - action_session_two_speaker_confrence_details
+  - action_session_more_confrence_details
+  - utter_view_information
+intents: 
+  - greet
+  - venues_confrence
+  - batman_room_confrence
+  - subsctibition_to_update
+  - view_information
+  - superman_room_confrence
+  - hero_room_confrence
+  - speakers_confrence
+  - view_session_speaker1
+  - view_session_speaker2
+  - session_speaker3
+  - session_rosestone
+  - session_freyabruke
+  - session_confrence
+  - session_one_speaker_details
+  - session_two_speaker
+templates: 
+  utter_greet: 
+    - 
+      text: "Hi Guest, welcome to the Chatbot Summit Confrence☺️"
+  utter_subscribe_message: 
+    - 
+      buttons: 
+        - 
+          payload: /view_information
+          title: "View Information"
+      text: "Thanks! You'll be notified by message when there are updates about Chatbot Summit Confrence."
+  utter_view_information: 
+    - 
+      text: "Chatbot Summit is the world's leading international event series connecting the eminent professionals and organisations who believe that Conversational A.I. will be the next curve in customer experiences."
+  utter_welcome_message: 
+    - 
+      buttons: 
+        - 
+          payload: /venues_confrence
+          title: Venues
+        - 
+          payload: /speakers_confrence
+          title: Speakers
+        - 
+          payload: /session_confrence
+          title: Session
+      text: "What do you want to know about Chatbot Summit Confrence☺️"
