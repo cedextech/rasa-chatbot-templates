@@ -1,0 +1,284 @@
+--- 
+actions: 
+  - utter_greet
+  - action_nearest_attractions
+  - utter_marine
+  - utter_mattancherry
+  - utter_fortkochi
+  - action_book_rooms
+  - utter_dulexroom_details
+  - utter_juniorsuite_details
+  - utter_clubsuite_details
+  - action_book_rooms_details
+  - utter_faqbreakfast
+  - utter_cancellationpolicy
+  - utter_checkintime
+  - utter_miminumage
+  - utter_checkout
+  - utter_childrenage
+  - utter_earlycheckin
+  - utter_latecheckin
+  - utter_latecheckout
+  - utter_roomcount
+  - utter_babycot
+  - utter_breakfasttime
+  - utter_refundable
+  - utter_receptiontime
+  - utter_carparking
+  - utter_parkingcost
+  - utter_partialcancel
+  - utter_faq_prompt
+  - utter_petpolicy
+  - utter_reservationconfirm
+  - utter_nearestairport
+  - utter_modifyreservation
+  - utter_meetingroom
+  - utter_security
+  - utter_luggage
+  - utter_contactnumber
+forms: 
+  - book_room_form
+intents: 
+  - greet
+  - goodbye
+  - nearest_attraction
+  - marine_drive
+  - mattancherry
+  - fort_kochi
+  - book_rooms
+  - dulex_room_details
+  - junior_suite_details
+  - club_suite_details
+  - book_room_now
+  - faqbreakfast
+  - faqcancellationpolicy
+  - faqcheckin
+  - faqcheckinage
+  - faqcheckout
+  - faqchildrenage
+  - faqearlycheckin
+  - faqlatecheckin
+  - faqlatecheckout
+  - faqroomcount
+  - faqbabycot
+  - faqbreakfasttime
+  - faqrefundable
+  - faqreceptiontime
+  - faqparking
+  - faqparkingcost
+  - faqpartialcancel
+  - faq
+  - faqpetpolicy
+  - faqreservaconfirm
+  - faqnearestairport
+  - faqmodifyreservation
+  - faqmeetingroom
+  - faqsecurity
+  - faqluggage
+  - faqcontactnumber
+slots: 
+  adults: 
+    auto_fill: false
+    type: unfeaturized
+  check_in: 
+    auto_fill: false
+    type: unfeaturized
+  check_out: 
+    auto_fill: false
+    type: unfeaturized
+  child: 
+    auto_fill: false
+    type: unfeaturized
+  email: 
+    auto_fill: false
+    type: unfeaturized
+  name: 
+    auto_fill: false
+    type: unfeaturized
+  phno: 
+    auto_fill: false
+    type: unfeaturized
+  room: 
+    auto_fill: false
+    type: unfeaturized
+templates: 
+  utter_ask_adults: 
+    - 
+      buttons: 
+        - 
+          payload: 1
+          title: 1
+        - 
+          payload: 2
+          title: 2
+        - 
+          payload: 3
+          title: 3
+      text: "How many adults (above 12 years old) are staying?"
+  utter_ask_check_in: 
+    - 
+      text: "On which date would you like to check in? E.g. July 10"
+  utter_ask_check_out: 
+    - 
+      text: "When would you like to checkout? E.g. July 12"
+  utter_ask_child: 
+    - 
+      buttons: 
+        - 
+          payload: 0
+          title: 0
+        - 
+          payload: 1
+          title: 1
+        - 
+          payload: 2
+          title: 2
+      text: "How many children (below 12 years old) are staying?"
+  utter_ask_email: 
+    - 
+      text: "Please provide us your email"
+  utter_ask_name: 
+    - 
+      text: "Please provide us your name"
+  utter_ask_phno: 
+    - 
+      text: "Please provide us your phone number"
+  utter_ask_room: 
+    - 
+      buttons: 
+        - 
+          payload: 1
+          title: 1
+        - 
+          payload: 2
+          title: 2
+        - 
+          payload: 3
+          title: 3
+      text: "How many rooms would you like to book?"
+  utter_babycot: 
+    - 
+      text: "Yes.Baby cots are available in our hotel"
+  utter_breakfasttime: 
+    - 
+      text: "Breakfast is served from 7am to 10am, every day."
+  utter_cancellationpolicy: 
+    - 
+      text: "If your travel plans change, you can cancel or modify your reservation in accordance with the hotel's cancellation policy as stated during the reservation process."
+  utter_carparking: 
+    - 
+      text: "Our hotel has a private car parking."
+  utter_checkintime: 
+    - 
+      text: "The check-in time is after 12 p.m. Let us know your arrival time in case you schedule an early check-in we'll do our best to make your room available."
+  utter_checkout: 
+    - 
+      text: "Check-out time is 12.00 noon."
+  utter_childrenage: 
+    - 
+      text: "Yes, children up to the age of 2 stay for free (accompanied by an adult)."
+  utter_clubsuite_details: 
+    - 
+      text: "An exclusive 600 sqft room that redefines luxury with two bedrooms, walk-in wardrobes, entertainment area, a kitchenette, private balcony and unparalleled views of the City.AMENITIES 55” Smart IPTV Bathrooms with walk-in shower and bathtubHairdryerCoffee Machine Refrigerator,Microwave Oven,Toaster Iron/ironing board In-roomlaptop-sized electronic safeBuilt-In Induction Hob with a Built-In HoodComplimentary Wi-Fi & Two Way Airport TransfersAccess to boardroom, and Grand Club serving breakfast and evening refreshmentsComplimentary bottled mineral water."
+  utter_contactnumber: 
+    - 
+      text: "The hotel can be contacted directly on 0333 444 5555."
+  utter_dulexroom_details: 
+    - 
+      text: "These Deluxe Rooms let you relax as you admire a beautiful view of the pool. Stay connected as you enjoy our free WiFi and watch movies with our 32-inch LCD TV and DVD player. Refresh yourself as you take a step into our rain shower.AMENITIES55” Smart IPTV  Bathrooms with walk-in shower and bathtubHairdryerCoffee MachineRefrigerator,Microwave Oven,Toaster Iron/ironing board In-roomlaptop-sized electronic safeBuilt-In InductionHob with a Built-In HoodComplimentary Wi-Fi & Two Way Airport TransfersAccess to the boardroom, and Grand Club serving breakfast and evening refreshmentsComplimentary bottled mineral water."
+  utter_earlycheckin: 
+    - 
+      text: "Early check-in is possible subjected to the availability."
+  utter_faq_prompt: 
+    - 
+      text: "OK.you can ask me anything you would like to know"
+  utter_faqbreakfast: 
+    - 
+      text: |-
+          Buffet breakfast, fee from 899.00 INR 
+          Continental breakfast, fee from 475.00 INR 
+          Full American breakfast, fee from 625.00 INR
+  utter_fortkochi: 
+    - 
+      text: "Fort Kochi is a destination of immense historical interest and a jewel in the crown of Kerala with its European heritage and true cosmopolitan temperament."
+  utter_greet: 
+    - 
+      buttons: 
+        - 
+          payload: /nearest_attraction
+          title: "Nearest Attraction"
+        - 
+          payload: /book_rooms
+          title: "Book Rooms"
+        - 
+          payload: /faq
+          title: FAQ
+      text: "Hi , Welcome to Hotel Presidency!☺️"
+  utter_juniorsuite_details: 
+    - 
+      text: "An exclusive 400 sqft room that redefines luxury with two bedrooms, walk-in wardrobes, entertainment area, a kitchenette, private balcony and unparalleled views of the City. AMENITIES55” Smart IPTVBathrooms with walk-in shower and bathtubHairdryerCoffee MachineRefrigerator,Microwave Oven,Toaster Iron/ironing boardIn-room laptop-sized electronic safeBuilt-In Induction Hob with a Built-In HoodComplimentary Wi-Fi & Two Way Airport TransfersAccess to boardroom, and Grand Club serving breakfast and evening refreshmentsComplimentary bottled mineral water."
+  utter_latecheckin: 
+    - 
+      text: "We hold rooms until 7 am the next morning. If you are going to be late, call the hotel and they will hold your room."
+  utter_latecheckout: 
+    - 
+      text: "Yes, our guests can request for late check out but it will be subject to availability.and a supplementary charge."
+  utter_luggage: 
+    - 
+      text: "Yes, We can look after your luggage. If  your room is not ready for check-in  or in case of early check out we will store your luggage free of charge and also on the days between your check-in and check-out"
+  utter_marine: 
+    - 
+      text: "Marine Drive is a buzzing waterfront district known for the Marine Walkway, popular for evening strolls, and leafy Subhash Bose Park. The modern Rainbow and Kettuvallam bridges offer backwater views, and cruises leave from jetties by the water."
+  utter_mattancherry: 
+    - 
+      text: "Historic Mattancherry is known for 16th-century Mattancherry Palace, built by the Portuguese in traditional Keralan style. Jew Town, the atmospheric area around the 1500s Jewish Synagogue, has charming cafes and shops selling antiques, crafts, and spices on Synagogue Lane and Jew Town Road."
+  utter_meetingroom: 
+    - 
+      text: |-
+          11 Event Room 25,962 sq ft
+          Total Event Space 1,600
+  utter_miminumage: 
+    - 
+      text: "The hotel has a minimum age requirement of 21 years old. Please call the hotel directly prior to your arrival to make any necessary arrangements. Hotel direct phone numbers can be found on your confirmation email or on the Hotel Information page"
+  utter_modifyreservation: 
+    - 
+      text: "Possibly. Rates are set by factors such as time of year, day of the week, length of stay, room type, number of individuals in the room, etc. Modification of any of these items may result in changes to the room rate. Please be sure to re-enter any special rate types to ensure that your search checks availability for those special rates."
+  utter_nearestairport: 
+    - 
+      text: "Cochin (Airport Code: COK) has regular domestic and international flights to most major destinations  in the world. The airport is 23 kms ( 35 mins drive) from the Hotel."
+  utter_parkingcost: 
+    - 
+      text: "The car park costs is included in the room rate."
+  utter_partialcancel: 
+    - 
+      text: "A hotel booking cannot be partially cancelled. On cancellation all rooms booked will get cancelled."
+  utter_petpolicy: 
+    - 
+      text: "Pets are not allowed in the hotel"
+  utter_receptiontime: 
+    - 
+      text: "Reception service is available 24 hours."
+  utter_refundable: 
+    - 
+      text: "Most hotel rooms are fully refundable if you cancel before the hotel's cancellation deadline, which varies across accommodations.Some hotel rooms are non-refundable.If you cancel a non-refundable accommodation booking, or cancel your booking after the accommodation's cancellation deadline, you are not eligible for a refund, regardless of the payment method used."
+  utter_reservationconfirm: 
+    - 
+      text: "As soon as you have completed the booking process, you will receive an ID number as confirmation. We will also send you a confirmation email and voucher with all your booking information."
+  utter_roomcount: 
+    - 
+      text: "A person can book as many number of rooms needed ."
+  utter_security: 
+    - 
+      text: |-
+          The Hotel has the following Security Arrangements:
+          Fire Safety
+          Wet Riser System
+          Alarm Syste
+          CCTV Cameras
+          24-hours Control Room to monitor the security cameras
+          Door Metal Detector
+          Hand Metal Detector
+          Mirror Metal Detector
+          EVD Machine to scan the luggage 
+          24-hours fire fighting & first aid trained security guards
+          2 nursing homes at a ½ km distance
