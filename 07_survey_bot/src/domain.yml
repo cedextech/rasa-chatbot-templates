@@ -1,0 +1,136 @@
+--- 
+actions: 
+  - utter_greet
+  - utter_goodbye
+intents: 
+  - greet
+  - bye
+slots:
+  first_reply: 
+   auto_fill: false
+   type: unfeaturized
+  rate_quality: 
+   auto_fill: false
+   type: unfeaturized
+  innovative: 
+   auto_fill: false
+   type: unfeaturized
+  price_service: 
+   auto_fill: false
+   type: unfeaturized
+  buy_service: 
+   auto_fill: false
+   type: unfeaturized
+  replace_service: 
+   auto_fill: false
+   type: unfeaturized
+  rate_service: 
+   auto_fill: false
+   type: unfeaturized
+  like_most: 
+   auto_fill: false
+   type: unfeaturized
+  improve_service: 
+   auto_fill: false
+   type: unfeaturized     
+forms: 
+  - survey_form
+templates: 
+  utter_ask_buy_service: 
+    - 
+      buttons: 
+        - 
+          payload: "Yes"
+          title: "Yes"
+        - 
+          payload: "NO"
+          title: "NO"
+      text: "If the service were available today, will you buy the service?"
+  utter_ask_first_reply: 
+    - 
+      buttons: 
+        - 
+          payload: Positive
+          title: Positive
+        - 
+          payload: Negative
+          title: Negative
+        - 
+          payload: Neutral
+          title: Neutral
+      text: "Tell us about your first reaction to the service"
+  utter_greet: 
+    - 
+      text: "Hey! I am Survey Bot,Please answer the following questions to proceed the survey"
+  utter_ask_innovative: 
+    - 
+      buttons: 
+        - 
+          payload: Innovative
+          title: Innovative
+        - 
+          payload: "Somewhat innovative"
+          title: "Somewhat innovative"
+        - 
+          payload: "Not innovative"
+          title: "Not innovative"
+      text: "How innovative is the service?"
+  utter_ask_price_service: 
+    - 
+      buttons: 
+        - 
+          payload: Excellent
+          title: Excellent
+        - 
+          payload: Average
+          title: Average
+        - 
+          payload: Poor
+          title: Poor
+      text: "Are you satisfied with price of the service?"
+  utter_ask_rate_quality: 
+    - 
+      buttons: 
+        - 
+          payload: "High quality"
+          title: "High quality"
+        - 
+          payload: "Low quality"
+          title: "Low quality"
+        - 
+          payload: "Neither high nor low quality"
+          title: "Neither high nor low quality"
+      text: "Please rate the quality of the service"
+  utter_ask_replace_service: 
+    - 
+      buttons: 
+        - 
+          payload: "Very likely"
+          title: "Very likely"
+        - 
+          payload: "Somewhat likely"
+          title: "Somewhat likely"
+        - 
+          payload: "Not so likely"
+          title: "Not so likely"
+      text: "How often will you replace your current service with the service"
+  utter_ask_rate_service: 
+    - 
+      buttons: 
+        - 
+          payload: "Very likely"
+          title: "Very likely"
+        - 
+          payload: "Somewhat likely"
+          title: "Somewhat likely"
+        - 
+          payload: "Not so likely"
+          title: "Not so likely"
+      text: "How likely is that you would recommend our service"
+  utter_ask_like_most: 
+    - text: "Write brefly about the things that you like most about the new service"
+  utter_ask_improve_service: 
+    - text: "Write brefly about the things that you would like to improve in new service"      
+  utter_goodbye:
+    - text: "Bye"
+    
