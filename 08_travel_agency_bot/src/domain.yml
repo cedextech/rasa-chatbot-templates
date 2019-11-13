@@ -1,0 +1,295 @@
+--- 
+actions: 
+  - utter_greet
+  - utter_first_message
+  - utter_welcome_message
+  - utter_plan_trip_one
+  - utter_activities
+  - action_activities_offerd
+  - utter_zipline_tour
+  - utter_natural_exploration
+  - utter_subwing
+  - utter_zipline_tour_details
+  - utter_natural_tour_details
+  - utter_subwing_tour_details
+  - utter_add_trip
+  - utter_contact
+  - utter_testimonials
+  - action_testimonials
+  - utter_about
+  - action_about_costa_rica
+  - utter_costa_rica
+  - utter_tips_tricks
+  - utter_tip1
+  - utter_tips2
+  - utter_tips3
+  - action_otherActivities_costa_rica
+forms: 
+  - trip_plan_form
+intents: 
+  - greet
+  - main_menu
+  - plan_my_trip
+  - activities_offered
+  - more_info_zipline_tour
+  - more_info_natural_exploration
+  - more_info_subwing
+  - tour_details_zipline
+  - tour_details_natural_exploration
+  - tour_details_subwing
+  - add_to_mytrip
+  - contact_us
+  - testimonials
+  - about_costa_rica
+  - tips_and_tricks
+  - tips_1
+  - tips_2
+  - tips_3
+  - other_activities
+slots: 
+  adults: 
+    auto_fill: false
+    type: unfeaturized
+  budget: 
+    auto_fill: false
+    type: unfeaturized
+  child: 
+    auto_fill: false
+    type: unfeaturized
+  email: 
+    auto_fill: false
+    type: unfeaturized
+  phno: 
+    auto_fill: false
+    type: unfeaturized
+  travel_date: 
+    auto_fill: false
+    type: unfeaturized
+  travel_period: 
+    auto_fill: false
+    type: unfeaturized
+  trip_type: 
+    auto_fill: false
+    type: unfeaturized
+templates: 
+  utter_activities: 
+    - 
+      text: |-
+          🚣 We offer a wide range of adventure and nature activities that will always take place in in private mode, using our own equipment and guides
+          
+           please choose an option to get started
+  utter_ask_adults: 
+    - 
+      buttons: 
+        - 
+          payload: 1-3
+          title: 1-3
+        - 
+          payload: 3-5
+          title: 3-5
+        - 
+          payload: 5+
+          title: 5+
+      text: "How many adults are coming?"
+  utter_ask_budget: 
+    - 
+      buttons: 
+        - 
+          payload: "Less than $2000"
+          title: "Less than $2000"
+        - 
+          payload: $2000-$5000
+          title: $2000-$5000
+        - 
+          payload: "More than $5000"
+          title: "More than $5000"
+      text: "What's an estimated budget per person(excluding airfare)?"
+  utter_ask_child: 
+    - 
+      buttons: 
+        - 
+          payload: "No"
+          title: "No"
+        - 
+          payload: "1-3 children"
+          title: "1-3 children"
+        - 
+          payload: "3+ children"
+          title: "3+ children"
+      text: "Are children traveling with you?"
+  utter_ask_email: 
+    - 
+      text: "What's your best email address, so we can send you details?"
+  utter_ask_phno: 
+    - 
+      text: "What's your best phone number📲 to reach you at?"
+  utter_ask_travel_date: 
+    - 
+      text: "When are you planning to travel?"
+  utter_ask_travel_period: 
+    - 
+      buttons: 
+        - 
+          payload: "5-10 days"
+          title: "5-10 days"
+        - 
+          payload: "10+ days"
+          title: "10+ days"
+        - 
+          payload: "Not sure yet"
+          title: "Not sure yet"
+      text: "How long are you planning to travel?"
+  utter_ask_trip_type: 
+    - 
+      buttons: 
+        - 
+          payload: "Adventure - Adrenaline"
+          title: "Adventure - Adrenaline"
+        - 
+          payload: Nature
+          title: Nature
+        - 
+          payload: Relaxation
+          title: Relaxation
+      text: "What kind of trip are you looking for?"
+  utter_first_message: 
+    - 
+      buttons: 
+        - 
+          payload: /main_menu
+          title: "Let's see"
+      text: "I'm VIP concierge and i'wiil help you to make your Costa Rica vacation to be perfect ⭐⭐⭐⭐⭐ right after you click the button below"
+  utter_greet: 
+    - 
+      text: |-
+          Hello Guest!
+          
+          Welcome to Costa Rica Adventure, where your comfrot, personal safety and total satisfaction is the highest priority
+  utter_natural_exploration: 
+    - 
+      buttons: 
+        - 
+          payload: /other_activities
+          title: "Oher Activities"
+      text: "Many  speceis of flora and fauna are unique to the park and found nowhere else on the earth\n\n\
+          \x20upon arrival at the park,your guide will slowly walk in search of wildlife "
+  utter_natural_tour_details: 
+    - 
+      buttons: 
+        - 
+          payload: /other_activities
+          title: "Oher Activities"
+      text: |-
+          🕛 Lenght of the tour: full day
+          
+          Minpeople: 4
+          
+          Includes: transprotation round trip,fruit snacks,experience guides,lunch,entrence ticket and water
+          
+          Recommendations: light cloth,bathing suit,sneakers
+          
+          
+          💵:$ 120 per person
+  utter_plan_trip_one: 
+    - 
+      text: "🙋 We look forward to assisting you with your travel planning needs"
+  utter_subwing: 
+    - 
+      buttons: 
+        - 
+          payload: /other_activities
+          title: "Oher Activities"
+      text: "🏝️ Enjoy a full day adventure on the gorgeous Tortuga Island, We cater to groups of up to 8 people maximum"
+  utter_subwing_tour_details: 
+    - 
+      buttons: 
+        - 
+          payload: /other_activities
+          title: "Oher Activities"
+      text: |-
+          🕛 Lenght of the tour: full day
+          
+          min.people: 2
+          
+          Includes: transprotation round trip,safety equipment,experience guides and insured vechicles
+          
+          Recommendations: swing suits,towel,sun screen and loads of energy
+          
+          
+          💵:$ 125 per person
+  utter_welcome_message: 
+    - 
+      buttons: 
+        - 
+          payload: /plan_my_trip
+          title: "📅Plan My Trip"
+        - 
+          payload: /activities_offered
+          title: "Activities Offered"
+        - 
+          payload: /contact_us
+          title: "📞 Contact Us"
+        - 
+          payload: /testimonials
+          title: "⭐ Testimoials"
+        - 
+          payload: /about_costa_rica
+          title: "🌅 About Costa Rica" 
+        - 
+          payload: /tips_and_tricks
+          title: "👍 Tips And Tricks"        
+      text: "Ready to make your Costa Rica trip planning easy, make it worry-free and seamless?!\n\
+          \x20Click <Plan My Trip> "
+  utter_zipline_tour: 
+    - 
+      buttons: 
+        - 
+          payload: /other_activities
+          title: "Oher Activities"
+      text: "🚀 Costa Rica Zipline tour begins with a 10-minute ride up the hill aboard our specially designed 40 passenger tracker. Once at the top of the moutain we will start to descend"
+  utter_zipline_tour_details: 
+    - 
+      buttons: 
+        - 
+          payload: /other_activities
+          title: "Oher Activities"
+      text: |-
+          🕛 Lenght of the tour: 2 hours
+          
+          🌎 Location: 15 minute away from Jaco Beach
+          
+          Includes: transprotation round trip,safety equipment,experience guides and insured vechicles
+          
+          Recommendations: confortable clothing,sun glasses,camera and sun block
+          
+          
+          💵:$ 70 per person
+  utter_add_trip:
+    - text: "Well done,trip is  added sucessfully"
+  utter_contact:
+    - text: "🕐 our office is open monday-friday 8 am- 5 pm , local costa rica time"
+  utter_testimonials:
+    - text: "We are so exited to share with these testimonials from our clients👇"
+  utter_about:
+    - text: "From vast stretches of Caribbean and pacific coastline, wild rainforest and wide open savannas, to imposing mountains,lush river valleys and beguiling cloud forests..."
+  utter_costa_rica:
+    - text: "...Costa Rica is a country that is as appealing to families and honeymooners as it is to luxery travelers and adventure seekers\nEven though Costa Rica is 8 degree above the equator, Costa Rica is much more 'tempreture' than most North American locations"
+  utter_tips_tricks:
+    - 
+      buttons: 
+        - 
+          payload: /tips_1
+          title: "Tips1"
+        - 
+          payload: /tips_2
+          title: "Tips2"
+        - 
+          payload: /tips_3
+          title: "Tips3"    
+      text: "🏝️ Even though Costa Rica is one of the most popular and visited countries in Central America, 💡there are a few things many things travelers aren't aware"
+  utter_tip1:
+    - text: "🍛 Street food is the best food in Costa Rica, Costa Rican cuisine is delicious and some of the best eating spots are littile roadside local restaurents and 'sodas'"
+  utter_tips2:
+    - text: "🍀🍀 Costa Rica is considered the 'greenest' country in the world and it ranked first in the Happy Planet Index\n"
+  utter_tips3:
+    - text: "Costa Rica is very creative when its comes to driving. They usually pay no attention to traffic laws and drive like they are 'kings of the road'🚗\nIf you rent a car, you should know there are few or no street signs in most part of the country, so getting around will be a bit of a challenge"
