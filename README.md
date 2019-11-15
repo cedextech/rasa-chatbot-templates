@@ -2,6 +2,8 @@
 
 This repository contains a collection of boilerplate templates for different chatbot usecases on RASA platform.
 
+<p align="center"><img src="https://i.ibb.co/Vpd6x6V/Rasa-Chatbot-Templates.png" width="1000" height="500"></p>
+
 ### How to use it?
 Here are the simple steps that you can follow to use a template:
 * Install RASA https://rasa.com/docs/rasa-x/installation-and-setup/ 
@@ -14,3 +16,13 @@ Here are the simple steps that you can follow to use a template:
 
 ### Important
 Being boilerplates, the bots does contain minimal training data for `stories` just enough to structure the conversation skeleton. Please don't forget to improve the conversations with `rasa interactive` command.
+
+### Templates
+- **[Smalltalk](https://github.com/cedextech/Rasa-Chatbot-Templates/tree/master/01_smalltalk_bot)**
+- **[Lead Generation](https://github.com/cedextech/Rasa-Chatbot-Templates/tree/master/02_lead_bot)**
+- **[Real Estate](https://github.com/cedextech/Rasa-Chatbot-Templates/tree/master/03_real_estate_bot)**
+- **[Feedback Collection](https://github.com/cedextech/Rasa-Chatbot-Templates/tree/master/04_feedback_bot)**
+- **[Event Concierge](https://github.com/cedextech/Rasa-Chatbot-Templates/tree/master/05_event_bot)**
+- **[Hotel](https://github.com/cedextech/Rasa-Chatbot-Templates/tree/master/06_hotel_bot)**
+- **[Survery](https://github.com/cedextech/Rasa-Chatbot-Templates/tree/master/07_survey_bot)**
+- **[Travel Agency](https://github.com/cedextech/Rasa-Chatbot-Templates/tree/master/08_travel_agency_bot)**
