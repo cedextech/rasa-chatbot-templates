@@ -2,7 +2,7 @@
 
 This repository contains a collection of boilerplate templates for different chatbot usecases on RASA platform.
 
-<p align="center"><img src="https://i.ibb.co/Vpd6x6V/Rasa-Chatbot-Templates.png" width="1000" height="500"></p>
+<p align="center"><img src="https://i.ibb.co/R0Gz8SY/Rasa-Chatbot-Templates.png"></p>
 
 ### How to use it?
 Here are the simple steps that you can follow to use a template:
