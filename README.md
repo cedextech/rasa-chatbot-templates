@@ -1,10 +1,11 @@
 # Rasa Chatbot Templates
 
-This repository contains a collection of boilerplate templates for different chatbot usecases on RASA platform.
-
 <p align="center"><img src="https://i.ibb.co/R0Gz8SY/Rasa-Chatbot-Templates.png"></p>
 
-### How to use it?
+### Introduction
+A collection of boilerplate templates for different chatbot usecases on RASA platform.
+
+### Installation & Configuration
 Here are the simple steps that you can follow to use a template:
 * Install RASA https://rasa.com/docs/rasa-x/installation-and-setup/ 
 * Create a `project_directory` for your project
@@ -13,6 +14,9 @@ Here are the simple steps that you can follow to use a template:
 * Train the bot with command `rasa train`
 * Evaluate the bot in terminal with command `rasa test`
 * Start talking to the bot in terminal with command `rasa shell` 
+
+### Documentation
+[Read Here](https://cedextech.github.io/Rasa-Chatbot-Templates/)
 
 ### Important
 Being boilerplates, the bots does contain minimal training data for `stories` just enough to structure the conversation skeleton. Please don't forget to improve the conversations with `rasa interactive` command.
@@ -24,7 +28,7 @@ Being boilerplates, the bots does contain minimal training data for `stories` ju
 - **[Feedback Collection](https://github.com/cedextech/Rasa-Chatbot-Templates/tree/master/04_feedback_bot)**
 - **[Event Concierge](https://github.com/cedextech/Rasa-Chatbot-Templates/tree/master/05_event_bot)**
 - **[Hotel](https://github.com/cedextech/Rasa-Chatbot-Templates/tree/master/06_hotel_bot)**
-- **[Survery](https://github.com/cedextech/Rasa-Chatbot-Templates/tree/master/07_survey_bot)**
+- **[Survey](https://github.com/cedextech/Rasa-Chatbot-Templates/tree/master/07_survey_bot)**
 - **[Travel Agency](https://github.com/cedextech/Rasa-Chatbot-Templates/tree/master/08_travel_agency_bot)**
 
 ### Maintainers
@@ -33,3 +37,5 @@ Being boilerplates, the bots does contain minimal training data for `stories` ju
 
 ### Contributing
 Feel free to dive in! Open an issue or submit PRs.
+
+### Live Demo
