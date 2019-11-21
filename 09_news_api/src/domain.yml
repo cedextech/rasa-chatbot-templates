@@ -1,0 +1,78 @@
+intents:
+  - greet
+  - news_headline
+  - bbc_news
+  - news_us
+  - news_india
+  - news_australia
+  - news_from_source
+  - abc_news
+  - cnn_news
+  - search_news
+  
+
+
+actions:
+- utter_greet
+- action_news_headline_us
+- action_news_bbc
+- utter_newsheadline
+- action_news_headline_india
+- action_news_headline_au
+- utter_newssource
+- action_news_abc
+- action_news_cnn
+- action_news_search
+
+forms:
+  - search_form
+
+slots: 
+  topic: 
+    auto_fill: false
+    type: unfeaturized  
+
+templates:
+  utter_greet:
+    - 
+      buttons: 
+        - 
+          payload: /news_headline
+          title: "News Headline" 
+        - 
+          payload: /news_from_source
+          title: "NEWS from Specefic Source"
+        - 
+          payload: /search_news
+          title: "Search News"  
+
+      text: "Hi! To know about latest news please select an option" 
+  utter_newsheadline:
+    - 
+      buttons: 
+        - 
+          payload: /news_us
+          title: "News Headline US" 
+        - 
+          payload: /news_india
+          title: "News Headline India"
+        - 
+          payload: /news_australia
+          title: "News Headline Australia"    
+      text: "Please select an option from below" 
+  utter_newssource:
+    - 
+      buttons: 
+        - 
+          payload: /bbc_news
+          title: "BBC NEWS" 
+        - 
+          payload: /abc_news
+          title: "ABC NEWS"
+        - 
+          payload: /cnn_news
+          title: "CNN NEWS"    
+      text: "Please select an source from below"
+  utter_ask_topic:
+    - text: "Please enter a topic to search"
+       
