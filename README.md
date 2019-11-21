@@ -30,10 +30,12 @@ Being boilerplates, the bots does contain minimal training data for `stories` ju
 - **[Hotel](https://github.com/cedextech/Rasa-Chatbot-Templates/tree/master/06_hotel_bot)**
 - **[Survey](https://github.com/cedextech/Rasa-Chatbot-Templates/tree/master/07_survey_bot)**
 - **[Travel Agency](https://github.com/cedextech/Rasa-Chatbot-Templates/tree/master/08_travel_agency_bot)**
+- **[News with API](https://github.com/cedextech/rasa-chatbot-templates/tree/master/09_news_api)**
 
 ### Maintainers
 [@devkiran](https://github.com/devkiran).
 [@freakeinstein](https://github.com/freakeinstein).
+[@nileenashaju](https://github.com/nileenashaju)
 
 ### Contributing
 Feel free to dive in! Open an issue or submit PRs.
