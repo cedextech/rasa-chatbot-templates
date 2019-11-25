@@ -13,6 +13,7 @@ Here are the simple steps that you can follow to use a template:
 * Replace the files in the `project_directory` with the ones from downloaded template
 * Train the bot with command `rasa train`
 * Evaluate the bot in terminal with command `rasa test`
+* OPTIONAL: If you find a file called `actions.py` in your template directory, run this command in a new terminal `rasa run actions`
 * Start talking to the bot in terminal with command `rasa shell` 
 
 ### Documentation
