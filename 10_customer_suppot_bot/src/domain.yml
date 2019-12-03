@@ -1,0 +1,118 @@
+--- 
+actions: 
+  - utter_greet
+  - action_all_tickets
+  - action_create_tickets
+  - action_update_tickets
+  - action_updatedtickets
+forms: 
+  - create_ticket_form
+  - update_ticket_form
+intents: 
+  - greet
+  - show_all_tickets
+  - create_ticket
+  - update_ticket
+slots: 
+  description: 
+    auto_fill: false
+    type: unfeaturized
+  email: 
+    auto_fill: false
+    type: unfeaturized
+  priority: 
+    auto_fill: false
+    type: unfeaturized
+  priority-up: 
+    auto_fill: false
+    type: unfeaturized
+  status: 
+    auto_fill: false
+    type: unfeaturized
+  status-up: 
+    auto_fill: false
+    type: unfeaturized
+  subject: 
+    auto_fill: false
+    type: unfeaturized
+  ticket_id: 
+    auto_fill: false
+    type: unfeaturized
+templates: 
+  utter_ask_description: 
+    - 
+      text: "Please provide description to your ticket"
+  utter_ask_email: 
+    - 
+      text: "Email address of the requester. If no contact exists with this email address in Freshdesk, it will be added as a new contact."
+  utter_ask_priority: 
+    - 
+      buttons: 
+        - 
+          payload: 1
+          title: "Low "
+        - 
+          payload: 3
+          title: High
+        - 
+          payload: 4
+          title: Urgent
+      text: "Priority of the ticket"
+  utter_ask_priority-up: 
+    - 
+      buttons: 
+        - 
+          payload: 1
+          title: "Low "
+        - 
+          payload: 3
+          title: High
+        - 
+          payload: 4
+          title: Urgent
+      text: "Please select a priority to update"
+  utter_ask_status: 
+    - 
+      buttons: 
+        - 
+          payload: 2
+          title: "Open "
+        - 
+          payload: 3
+          title: Pending
+        - 
+          payload: 5
+          title: Closed
+      text: "Status of the ticket"
+  utter_ask_status-up: 
+    - 
+      buttons: 
+        - 
+          payload: 2
+          title: "Open "
+        - 
+          payload: 3
+          title: Pending
+        - 
+          payload: 5
+          title: Closed
+      text: "Please select a status to update"
+  utter_ask_subject: 
+    - 
+      text: "subject of ticket"
+  utter_greet: 
+    - 
+      buttons: 
+        - 
+          payload: /show_all_tickets
+          title: "Show All Tickets "
+        - 
+          payload: /create_ticket
+          title: "Create Tickets"
+        - 
+          payload: /update_ticket
+          title: "Update Tickets"
+      text: "Hey! I am avirtual assistant. I can help you with Ticket Creation, Update Ticket, Show All Tickets in Freshdesk(Help Desk)"
+  utter_ask_ticket_id: 
+    - 
+      text: "Please enter ticket id "
