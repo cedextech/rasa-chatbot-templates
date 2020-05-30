@@ -14,10 +14,7 @@ Here are the simple steps that you can follow to use a template:
 * Train the bot with command `rasa train`
 * Evaluate the bot in terminal with command `rasa test`
 * OPTIONAL: If you find a file called `actions.py` in your template directory, run this command in a new terminal `rasa run actions`
-* Start talking to the bot in terminal with command `rasa shell` 
-
-### Documentation
-[Read Here](https://cedextech.github.io/Rasa-Chatbot-Templates/)
+* Start talking to the bot in terminal with command `rasa shell`
 
 ### Important
 Being boilerplates, the bots does contain minimal training data for `stories` just enough to structure the conversation skeleton. Please don't forget to improve the conversations with `rasa interactive` command.
@@ -41,5 +38,3 @@ Being boilerplates, the bots does contain minimal training data for `stories` ju
 
 ### Contributing
 Feel free to dive in! Open an issue or submit PRs.
-
-### Live Demo
