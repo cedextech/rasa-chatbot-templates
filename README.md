@@ -37,4 +37,4 @@ Being boilerplates, the bots does contain minimal training data for `stories` ju
 [@nileenashaju](https://github.com/nileenashaju)
 
 ### Contributing
-Feel free to dive in! Open an issue or submit PRs.
+Feel free to dive in! Open an issue or submit PRs..
