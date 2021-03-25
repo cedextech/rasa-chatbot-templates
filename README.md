@@ -31,10 +31,5 @@ Being boilerplates, the bots does contain minimal training data for `stories` ju
 - **[News with API](https://github.com/cedextech/rasa-chatbot-templates/tree/master/09_news_api)**
 - **[Freshdesk API for Customer Support](https://github.com/cedextech/rasa-chatbot-templates/tree/master/10_freshdesk_customer_support_bot)**
 
-### Maintainers
-[@devkiran](https://github.com/devkiran).
-[@freakeinstein](https://github.com/freakeinstein).
-[@nileenashaju](https://github.com/nileenashaju)
-
 ### Contributing
 Feel free to dive in! Open an issue or submit PRs.
